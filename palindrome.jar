@@ -1,0 +1,25 @@
+import java.util.*;   
+class PalindromeExample2  
+{  
+   public static void main(String args[])  
+   {  
+      String work = ""; // Objects of String class  
+      Scanner in = new Scanner(System.in);   
+      System.out.println("Enter a string to check if it is a palindrome");  
+      work = in.nextLine(); 
+      palindrome(work);
+   }  
+    public static void palindrome(String m){ 
+      int l = 0;
+      int r = work.length() -1; 
+      While (r>l){
+         if(work.charAt(l++) != work.charAt(r--))
+         {
+            System.out.println("Entered string/number is a palindrome.");  
+            return;
+         }
+      }
+      System.out.println("Entered string/number isn't a palindrome."); 
+ 
+ }
+}  
